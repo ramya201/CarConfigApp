@@ -1,0 +1,45 @@
+Manufacturer: Mercedes-Benz
+Model: E350 Sedan    
+Base Price (in USD) : 51905
+
+Configuration Options with Cost (in USD)
+
+Color-Exterior: 
+Black: 0  
+Polar White: 0
+Obsidian Black Metallic: 720
+Cuprite Brown Metallic: 720
+Steel Grey Metallic: 720
+Iridium Silver Metallic: 720
+Palladium Silver Metallic: 720
+Pearl Beige Metallic: 720
+Lunar Blue Metallic: 720
+Indium Grey Metallic: 720
+Diamond Silver Metallic: 720
+Diamond White Metallic: 1515
+
+Color-Interior:
+Black MB-Tex: 0
+Almond MB-Tex: 0
+Ash MB-Tex: 0
+Black Leather: 1620
+Almond Leather: 1620
+Ash Leather: 1620
+Natural Beige: 1620
+
+Wheels:
+17-inch 8-spoke alloy wheels:0
+18-inch split 5-spoke alloy wheels:0
+18-inch AMG Twin 5-spoke alloy wheels:0
+
+Seats:
+Split folding rear seats: 440
+Heated and active ventilated front seats: 450
+
+Safety Accessories:
+4MATIC Package: 2500
+Lane Tracking Package: 850
+Driver Assistance Package: 2950
+PARKTRONIC: 970
+Rear side-impact air bags: 420
+Night View Assist PLUS Pedestrian Detection: 1780

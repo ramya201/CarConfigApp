@@ -1,0 +1,6 @@
+Manufacturer: Lamborghini
+Model: GALLARDO LP 570-4 SUPERLEGGERA    
+Base Price (in USD) : 30250
+
+Configuration Options with Cost (in USD)
+Currently, no customizable options exist.

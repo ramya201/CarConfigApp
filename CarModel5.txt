@@ -1,0 +1,22 @@
+Manufacturer: Chevrolet
+Model: Malibu    
+Base Price (in USD) : 23150
+
+Configuration Options with Cost (in USD)
+
+Exterior:
+Front License Plate Bracket : 15
+
+Color-Exterior: 
+Silver Ice Metallic: 0  
+Summit White: 0
+Black: 0
+Taupe Grey Metallic: 0
+Blue Topaz Metallic: 0
+Silver Topaz Metallic: 0
+Champagne Silver Metallic: 0
+Alantis Blue Metallic: 0
+Black Granite Metallic: 195
+
+Safety:
+Rear Park Assist: 295

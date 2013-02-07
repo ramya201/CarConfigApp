@@ -1,0 +1,9 @@
+Manufacturer: Ford
+Model: Fiesta
+Base Price (in USD): 13200
+
+Configuration Options with Cost (in USD)
+
+Transmission:
+5-speed Manual: 0
+6-speed Automatic: 1095

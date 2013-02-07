@@ -1,0 +1,34 @@
+Manufacturer: Ford
+Model: Focus Wagon ZTW    
+Base Price (in USD) : 18445
+
+Configuration Options with Cost (in USD)
+
+Color: 
+Fort Knox Gold Clearcoat Metallic: Included in Base Price  
+Liquid Grey Clearcoat Metallic: Included in Base Price
+Infra-Red Clearcoat : Included in Base Price
+Grabber Green Clearcoat Metallic : Included in Base Price
+Sangria Red Clearcoat Metallic : Included in Base Price
+French Blue Clearcoat : Included in Base Price
+Twilight Blue Clearcoat Metallic : Included in Base Price
+CD Silver Clearcoat Metallic : Included in Base Price
+Pitch Black Clearcoat : Included in Base Price
+Cloud 9 White Clearcoat : Included in Base Price
+
+Transmission:
+Automatic : Included in Base Price
+Manual : -815
+
+Brakes:
+Standard : Included in Base Price
+ABS : 400
+ABS with Advance Trac : 1625
+
+Side Impact Air Bags:
+Not present : Included in Base Price
+Present : 350
+
+Power Moonroof:
+Not present : Included in Base Price
+Present : 595

@@ -1,0 +1,6 @@
+Model is E350 Sedan
+Base Price is $51905
+
+Configuration options are as follows
+
+Color-Exterior, Color- Interior, Wheels, Seats, Safety Accessories

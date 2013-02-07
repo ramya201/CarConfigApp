@@ -1,0 +1,401 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green200\blue125;}
+\margl1440\margr1440\vieww12900\viewh10500\viewkind1
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 Socket Programming Test\
+
+\b0 \
+Classes in edu.cmu.java.network package\
+Client.java\
+ProxyServer.java\
+Server.java\
+\
+Program Flow:\
+1. Client receives text file name as input\
+2. Client parses text file and builds Automotive object and sends object to Server\
+3. Server saves this Automotive object in the LinkedHashMap of AutomotiveOptions object.\
+4. Before server exits, this AutomotiveOptions object is serialized to retain models data as there is no database being used in this case.\
+5. Client requests list of all models when he wishes to configure a car.\
+6. Server sends list of model names.\
+7. Client sends selected model name to server\
+8. Server sends back selected Automotive model\
+9. Client configures model.\
+\
+
+\b 1st Run:
+\b0 \
+\
+1. Run ServerTest.java in edu.cmu.java.Driver\
+\
+Output:\
+\pard\pardeftab720
+\cf0 Server is listening on Port 6000\
+\
+2. Run ClientTest.java in edu.cmu.java.Driver\
+<Input to be entered highlighted in Green>\
+\
+\pard\pardeftab720
+
+\b \cf0 Output:
+\b0 \
+Select-\
+1. Upload a car configuration\
+2. Configure a car\
+Please enter 1 or 2\
+\pard\pardeftab720
+\cf2 1\cf0 \
+Enter file name\
+\cf2 CarModel1.txt 
+\i \cf0 (Not case sensitive)
+\i0 \
+\
+Server:Car Model saved successfully\
+\
+Details:\
+Make:Ford\
+Model:Focus Wagon ZTW\
+Base Price:$18445\
+\
+Configuration Options:\
+Color\
+Fort Knox Gold Clearcoat Metallic: $0\
+Liquid Grey Clearcoat Metallic: $0\
+Infra-Red Clearcoat: $0\
+Grabber Green Clearcoat Metallic: $0\
+Sangria Red Clearcoat Metallic: $0\
+French Blue Clearcoat: $0\
+Twilight Blue Clearcoat Metallic: $0\
+CD Silver Clearcoat Metallic: $0\
+Pitch Black Clearcoat: $0\
+Cloud 9 White Clearcoat: $0\
+\
+Transmission\
+Automatic: $0\
+Manual: $-815\
+\
+Brakes\
+Standard: $0\
+ABS: $400\
+ABS with Advance Trac: $1625\
+\
+Side Impact Air Bags\
+Not present: $0\
+Present: $350\
+\
+Power Moonroof\
+Not present: $0\
+Present: $595\
+\
+\
+Do you want to continue?Enter Y or N\
+\cf2 y\cf0 \
+Select-\
+1. Upload a car configuration\
+2. Configure a car\
+Please enter 1 or 2\
+\cf2 1\cf0 \
+Enter file name\
+\cf2 CarModel2.txt\cf0 \
+\
+Server:Car Model saved successfully\
+\
+Details:\
+Make:Mercedes-Benz\
+Model:E350 Sedan\
+Base Price:$51905\
+\
+Configuration Options:\
+Color-Exterior\
+Black: $0\
+Polar White: $0\
+Obsidian Black Metallic: $720\
+Cuprite Brown Metallic: $720\
+Steel Grey Metallic: $720\
+Iridium Silver Metallic: $720\
+Palladium Silver Metallic: $720\
+Pearl Beige Metallic: $720\
+Lunar Blue Metallic: $720\
+Indium Grey Metallic: $720\
+Diamond Silver Metallic: $720\
+Diamond White Metallic: $1515\
+\
+Color-Interior\
+Black MB-Tex: $0\
+Almond MB-Tex: $0\
+Ash MB-Tex: $0\
+Black Leather: $1620\
+Almond Leather: $1620\
+Ash Leather: $1620\
+Natural Beige: $1620\
+\
+Wheels\
+17-inch 8-spoke alloy wheels: $0\
+18-inch split 5-spoke alloy wheels: $0\
+18-inch AMG Twin 5-spoke alloy wheels: $0\
+\
+Seats\
+Split folding rear seats: $440\
+Heated and active ventilated front seats: $450\
+\
+Safety Accessories\
+4MATIC Package: $2500\
+Lane Tracking Package: $850\
+Driver Assistance Package: $2950\
+PARKTRONIC: $970\
+Rear side-impact air bags: $420\
+Night View Assist PLUS Pedestrian Detection: $1780\
+\
+\
+Do you want to continue?Enter Y or N\
+\cf2 n\
+\
+\pard\pardeftab720
+\cf0 Exiting..\
+\
+\pard\pardeftab720
+
+\b \cf0 Server Output:
+\b0 \
+\
+Server is listening on Port 6000\
+ProxyServer main is handling client..\
+Server continues listening for new connections\
+\
+ProxyServer received object:\
+\
+Make:Ford\
+Model:Focus Wagon ZTW\
+Base Price:$18445\
+\
+Configuration Options:\
+Color\
+Fort Knox Gold Clearcoat Metallic: $0\
+Liquid Grey Clearcoat Metallic: $0\
+Infra-Red Clearcoat: $0\
+Grabber Green Clearcoat Metallic: $0\
+Sangria Red Clearcoat Metallic: $0\
+French Blue Clearcoat: $0\
+Twilight Blue Clearcoat Metallic: $0\
+CD Silver Clearcoat Metallic: $0\
+Pitch Black Clearcoat: $0\
+Cloud 9 White Clearcoat: $0\
+\
+Transmission\
+Automatic: $0\
+Manual: $-815\
+\
+Brakes\
+Standard: $0\
+ABS: $400\
+ABS with Advance Trac: $1625\
+\
+Side Impact Air Bags\
+Not present: $0\
+Present: $350\
+\
+Power Moonroof\
+Not present: $0\
+Present: $595\
+\
+\
+ProxyServer received object:\
+\
+Make:Mercedes-Benz\
+Model:E350 Sedan\
+Base Price:$51905\
+\
+Configuration Options:\
+Color-Exterior\
+Black: $0\
+Polar White: $0\
+Obsidian Black Metallic: $720\
+Cuprite Brown Metallic: $720\
+Steel Grey Metallic: $720\
+Iridium Silver Metallic: $720\
+Palladium Silver Metallic: $720\
+Pearl Beige Metallic: $720\
+Lunar Blue Metallic: $720\
+Indium Grey Metallic: $720\
+Diamond Silver Metallic: $720\
+Diamond White Metallic: $1515\
+\
+Color-Interior\
+Black MB-Tex: $0\
+Almond MB-Tex: $0\
+Ash MB-Tex: $0\
+Black Leather: $1620\
+Almond Leather: $1620\
+Ash Leather: $1620\
+Natural Beige: $1620\
+\
+Wheels\
+17-inch 8-spoke alloy wheels: $0\
+18-inch split 5-spoke alloy wheels: $0\
+18-inch AMG Twin 5-spoke alloy wheels: $0\
+\
+Seats\
+Split folding rear seats: $440\
+Heated and active ventilated front seats: $450\
+\
+Safety Accessories\
+4MATIC Package: $2500\
+Lane Tracking Package: $850\
+Driver Assistance Package: $2950\
+PARKTRONIC: $970\
+Rear side-impact air bags: $420\
+Night View Assist PLUS Pedestrian Detection: $1780\
+\
+\
+Thread-2Exiting...\
+\
+
+\b 2nd Run:\
+\pard\pardeftab720
+
+\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 1. Run ServerTest.java in edu.cmu.java.Driver\
+\
+
+\b Output:
+\b0 \
+\pard\pardeftab720
+\cf0 Server is listening on Port 6000\
+\
+2. Run ClientTest.java in edu.cmu.java.Driver\
+\
+Output:\
+Select-\
+1. Upload a car configuration\
+2. Configure a car\
+Please enter 1 or 2\
+\pard\pardeftab720
+\cf2 1\cf0 \
+Enter file name\
+\cf2 CarModel3.txt\cf0 \
+\
+Server:Car Model saved successfully\
+\
+Details:\
+Make:Ford\
+Model:Fiesta\
+Base Price:$13200\
+\
+Configuration Options:\
+Transmission\
+5-speed Manual: $0\
+6-speed Automatic: $1095\
+\
+\
+Do you want to continue?Enter Y or N\
+\cf2 y\cf0 \
+Select-\
+1. Upload a car configuration\
+2. Configure a car\
+Please enter 1 or 2\
+\cf2 2\cf0 \
+\
+Server:Available Models[Ford-Focus Wagon ZTW, Mercedes-Benz-E350 Sedan, Ford-Fiesta] 
+\i (Model Options uploaded are serialized so models uploaded in the 1st run are also available)
+\i0 \
+Enter selected Model Name\
+\cf2 Ford-Focus Wagon ZTW\cf0 \
+\
+Server:\
+Configurable Options\
+\
+Make:Ford\
+Model:Focus Wagon ZTW\
+Base Price:$18445\
+\
+Configuration Options:\
+Color\
+Fort Knox Gold Clearcoat Metallic: $0\
+Liquid Grey Clearcoat Metallic: $0\
+Infra-Red Clearcoat: $0\
+Grabber Green Clearcoat Metallic: $0\
+Sangria Red Clearcoat Metallic: $0\
+French Blue Clearcoat: $0\
+Twilight Blue Clearcoat Metallic: $0\
+CD Silver Clearcoat Metallic: $0\
+Pitch Black Clearcoat: $0\
+Cloud 9 White Clearcoat: $0\
+\
+Transmission\
+Automatic: $0\
+Manual: $-815\
+\
+Brakes\
+Standard: $0\
+ABS: $400\
+ABS with Advance Trac: $1625\
+\
+Side Impact Air Bags\
+Not present: $0\
+Present: $350\
+\
+Power Moonroof\
+Not present: $0\
+Present: $595\
+\
+-------xxxxx-------\
+Configure the Car-\
+Please enter option choice.\
+Color:\
+\cf2 French Blue Clearcoat\cf0 \
+Transmission:\
+\cf2 Manual\cf0 \
+Brakes:\
+\cf2 ABS\cf0 \
+Side Impact Air Bags:\
+\cf2 Not present\cf0 \
+Power Moonroof:\
+\cf2 Not present\cf0 \
+\
+Final Configuration-\
+\
+Your chosen configuration is:\
+\
+Make:Ford\
+Model:Focus Wagon ZTW\
+Base Price:18445\
+Color=>French Blue Clearcoat\
+Transmission=>Manual\
+Brakes=>ABS\
+Side Impact Air Bags=>Not present\
+Power Moonroof=>Not present\
+Final Price:18030\
+Do you want to continue?Enter Y or N\
+n\
+\
+Exiting..\
+\
+\pard\pardeftab720
+
+\b \cf0 Server Output:
+\b0 \
+\
+Server is listening on Port 6000\
+ProxyServer main is handling client..\
+Server continues listening for new connections\
+\
+ProxyServer received object:\
+\
+Make:Ford\
+Model:Fiesta\
+Base Price:$13200\
+\
+Configuration Options:\
+Transmission\
+5-speed Manual: $0\
+6-speed Automatic: $1095\
+\
+\
+ProxyServer received object:\
+Get Options\
+ProxyServer received object:\
+Model-Ford-Focus Wagon ZTW\
+Thread-1Exiting...\
+}
